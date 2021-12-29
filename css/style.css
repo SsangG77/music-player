@@ -1,0 +1,19 @@
+@import "now_play.css";
+@import "artist_playlist.css";
+
+
+
+* {
+    box-sizing: border-box;
+}
+  
+main {
+  padding: 60px;
+  display: flex;
+  width: 150vh;
+}
+  
+a {
+  text-decoration: none;
+  color: inherit;
+}

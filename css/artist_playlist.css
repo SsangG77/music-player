@@ -1,0 +1,230 @@
+.artist {
+    width: 310px;
+    height: 680px;
+    box-shadow:0 5px 50px rgba(0, 0, 0, 0.3);
+    padding: 40px 20px;
+    border-radius: 30px;
+  
+    position: relative;
+    margin-right: 150px;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+  
+  /* artist_profile */
+  
+  .artist_pofile {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .artist_profile_img {
+    margin-bottom: 30px;
+    transition: all 0.6s ease-in-out;
+  }
+  
+  .artist_profile_img:hover {
+    transform: scale(1.2, 1.2);
+    cursor: pointer;
+  }
+  
+  .artist_profile_img img {
+      box-shadow: 0 5px 7px 2px #76A187;
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      object-position: left top;
+      border-radius: 50%;
+  }
+  
+  .artist_profile_name {
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+  
+  .artist_profile__genre {
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 0.3;
+  }
+  
+  /* buttons */
+  
+  .artist_profile__buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .shuffle, .heart {
+    width: 97px;
+    height: 38px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 0px 10px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .shuffle {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .shuffle:active {
+    background-color: white;
+    color: black;
+  }
+  
+  .heart {
+    margin-left: 10px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .heart:active .fa-heart {
+    color: #F5A9F2;
+  }
+  
+  /*music list*/
+  
+  .music_list {
+    margin: 28px 0;
+    padding: 5px 7px;
+    width: 270px;
+    overflow: scroll;
+    height: 300px;
+    
+  }
+  
+  .music_list__one_of {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    position: relative;
+    border-radius: 14px;
+    transition: all 0.5s ease-in-out;
+  
+  }
+
+  .music_list__one_of>a {
+    display: flex;
+    width: 256px;
+    justify-content: space-between;
+  }
+  
+  .music_list__one_of__cover {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+  }
+  
+  .cover__playnow {
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .music_list__one_of:hover {
+    cursor: pointer;
+  }
+  
+  .music_list__one_of:hover .cover__playnow {
+    opacity: 1;
+  }
+  
+  .music_list__one_of:hover {
+    box-shadow: 0 0px 10px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cover__playnow, .music_list__one_of__cover img {
+    width: 50px;
+    height: 50px;
+    border-radius: 7px;
+  }
+  
+  .music_list__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    left: 80px;
+    top: 19px;
+  }
+  
+  .music_list__artist {
+    font-size: 14px;
+    margin-bottom: 5px;
+    opacity: 0.5;
+    font-weight: 600;
+  }
+  
+  .music_list__title {
+    font-size: 17px;
+    font-weight: 800;
+  }
+  
+  .three_dots {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: black;
+    opacity: 0.5;
+    margin: 1.3px 0;
+  }
+  
+  /* controller */
+  
+  .music_list__controller>a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    height: 60px;
+    width: 90%;
+    font-size: 14px;
+    position: absolute;
+    bottom: 10px;
+    z-index: 3;
+    box-shadow: 0 0px 10px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .controller__artist {
+    opacity: 0.5;
+    margin-bottom: 4px;
+  }
+  
+  .controller__button {
+    width: 33%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .controller__button>i:nth-child(2) {
+    font-size: 20px;
+  }

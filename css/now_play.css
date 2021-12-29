@@ -1,0 +1,114 @@
+.playnow {
+    width: 310px;
+    height: 680px;
+    box-shadow:0 5px 50px rgba(0, 0, 0, 0.3);
+    padding: 40px 20px;
+    border-radius: 30px;
+  }
+  
+  .playnow__cover {
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+  }
+  
+  .playnow__cover>img {
+    width: 225px;
+    height: 225px;
+    border-radius: 20px;
+    box-shadow: 0 7px 18px 9px #DEDFFF;
+    transition: all 0.6s ease-in-out;
+  }
+  
+  .playnow__cover>img:hover {
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+  }
+  
+  .playnow__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  
+  .playnow__name {
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .playnow__artist {
+    font-size: 17px;
+    font-weight: 600;
+    opacity: 0.5;
+  }
+  
+  .playnow__slider_time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    opacity: 0.6;
+    margin-bottom: 2px;
+  }
+  
+  .slider {
+    position: relative;
+    width: 100%;
+    height: 4px;
+    border-radius: 14px;
+    background-color: #F2E0F7;
+  }
+  
+  .slider_cursor {
+    position: absolute;
+    top: -1.6px;
+    left: 85px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #9A2EFE;
+  }
+  
+  .player_slider {
+    width: 34%;
+    height: 4px;
+    border-radius: 14px;
+    background-color: #9A2EFE;
+  }
+  
+  
+  .playnow__controller {
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5F04B4;
+    padding: 23px;
+    border-radius: 50%;
+    color: white;
+    box-shadow: 0 0px 8px 4px rgba(95, 4, 180, 0.2);
+  }
+  
+  .play:hover {
+    cursor: pointer;
+  }
+  
+  .play:active {
+    background-color: white;
+    color: #5F04B4;
+  }
+  
+  .fa-play, .playnow__controller .fa-step-backward, .playnow__controller .fa-step-forward {
+    font-size: 20px;
+  }
+  
+  .fa-redo-alt, .fa-random {
+    opacity: 0.3;
+  }
